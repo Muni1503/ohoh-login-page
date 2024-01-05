@@ -580,7 +580,7 @@ width: 60px;
     .our-blogs-content .row .col img {
         width:300px;
         height:200px;
-        margin-left:7%;
+        margin-left:15%;
     }
 
     .pioneer{
@@ -662,7 +662,13 @@ width: 60px;
         justify-content: center;
         align-items: center;
     }
-        
+    .explore .services-provided .service span{
+        padding-right: 30px;
+    }
+    .sponsors .sponsor-images img{
+        width:150px;
+        height:80px;
+    }  
     
     
 
