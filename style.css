@@ -14,19 +14,23 @@
   nav{
     display:flex;
     background-color: white;
-    border-radius:40px;
+    border-radius:30px;
     margin-left: 30%;
     margin-right: 20%;
     margin-top:50px;
     margin-bottom:100px;
-    position: fixed;
-    justify-content: space-between;
-    padding:20px 80px;
+    position:fixed;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px 0px;
+    width:38%;
      }
   nav a{
     text-decoration: none;
     color:black;
   }
+
+
 
  .nav-block-first{
     display: flex;
@@ -35,25 +39,32 @@
     padding-top: 3px;
  } 
  .nav-block-middle{
-    padding-top: 6px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-left:0%;
  }
 .nav-block-middle a{
      padding-left:10px;
 }
 
-.contact button{
+.contact {
     border-radius:50px;
-    font-size: 20px;
+    font-size: 15px;
     background: white;
     border: 1px solid whitesmoke;
-   padding-left: 20px;
-   padding-right: 20px;
+    padding-left: 10px;
+    
+  
+
 }
 
-.contact button:hover{
+
+.contact:hover{
    
     background: linear-gradient(300deg, rgb(236, 78, 26), rgb(18, 18, 120));
     color: white;
+    padding-right: 10px;
   }
  
 .nav-block-first img{
@@ -61,6 +72,21 @@
     height:30px;
     padding-bottom:5px;
 }  
+
+nav .menu .menu-line{
+    height:3px;
+    width:20px;
+    background-color: rgb(236,78,24);
+    margin-bottom: 3px;
+   
+}
+
+nav .menu{
+    cursor:pointer;
+    display:none; 
+    flex-direction: column;
+    
+}
 
 
 
@@ -116,10 +142,7 @@
     background-color: white;
 }
 
-.first-button:hover{
-    background-color:rgb(236,78,24);
-    color:white;
-}
+
 .dashboard img{
     width:1400px;
     height:600px;
@@ -489,6 +512,155 @@ width: 60px;
 .copyrights{
     text-align:center;
     margin-top: 1%;
+}
+
+@media all and (max-width: 800px){
+    *{
+        padding:0px;
+        margin:0px;
+    }  
+    nav{
+        flex-direction: column;
+        margin:0;
+        margin-left:30%;
+        margin-top:5%;
+      }    
+      .nav-block-first{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+     .nav-block-middle {
+        display: block;
+        margin-bottom: 10%;
+        text-align: center;
+        margin-top:10%;
+        display: none;
+        }
+     .nav-block-middle a{
+        margin-bottom: 15%;
+        display: flex;
+     }
+     .nav-block-middle a:hover{
+        background-color: rgb(236, 78, 26);
+        border-radius: 30px;
+        padding:5px 10px;
+     }
+
+     .nav-block-middle button:hover{
+        padding:5% 10%;
+     }
+     .nav-block-middle button{
+        padding:0;
+     }
+     nav .menu{
+        display:block;
+        
+     }
+     .showmenu{
+        display:block;
+     }
+    
+     
+    .head-buttons{
+        margin:0;
+        padding:0;
+        padding:0 60px;
+        margin-left:30%;
+    }
+    .head-buttons button{
+        margin-bottom: 15%;
+        padding:0 30px;
+        text-align: start;
+    }
+    .dashboard img,
+    .round img,
+    .controls img,
+    .findimg img,
+    .uf-img img,
+    .our-blogs-content .row .col img {
+        width:600px;
+        height:400px;
+        margin-left:3%;
+    }
+
+    .pioneer{
+        padding:0;
+        margin: 0;
+    }
+    .controls .row1 {
+        display: block;
+    }
+    .controls .row2{
+        display:block;
+    }
+    .controls .row1 h4 {
+        text-align: center;
+        margin-top:3%;
+    }
+    .controls .row1 p{
+        text-align: center;
+        margin-top:3%;
+    }
+
+    .controls .row2 h4 {
+        padding:0;
+        margin:0;
+        text-align: center;
+        margin-top:3%;
+    }
+    .controls .row2 p{
+        margin:0;
+        padding: 0;
+        text-align: center;
+        margin-top:1%;
+    }
+    .our-blogs-content .row {
+        display:block;
+    }
+
+    .our-blogs-content .row .col h4{
+        padding:0;
+        margin:0;
+        text-align: center;
+        margin-top:3%;
+    }
+    .our-blogs-content .row .col p{
+        padding:0;
+        margin:0;
+        text-align: center;
+        margin-top:3%;
+    }
+    .our-blogs-content .row .col button{
+        padding:0;
+        margin:0;
+        margin-top:3%;
+        margin-left:45%;
+        margin-bottom:10%;
+        border:1px solid rgb(236, 78, 26);
+        padding:0 10px;
+    }
+    .explore .services-provided{
+        display:block;
+        justify-content: center;
+        padding:0;
+        margin:0;
+        margin:0% 32%;
+        padding-top:5%;
+        margin-bottom:5%;
+    }
+    .explore .services-provided .service{
+        margin:0;
+        padding: 0;
+    }
+    
+        
+    
+    
+
+
+    
+
 }
 
 

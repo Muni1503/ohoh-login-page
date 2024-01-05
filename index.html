@@ -6,37 +6,38 @@
     <title>ohoh front-page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-
 </head>
 <body>
     <div class="first-block">
         <nav>
-       
             <div class="nav-block-first">
                 <img class="logo" src="logo.png" alt="Logo">
                 <h3>Ohoh</h3>
             </div>
-    
             
             <div class="nav-block-middle">
                 <a href="#products">Products</a>
                 <a href="#integration">Integration</a>
                 <a href="#about">About Us</a>
+                <a href=""><button class="contact"> Contact</button></a>
             </div>
-    
-           
-            <div class="contact">
-                <button>contact</button>
-            </div>    
+            <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            
+            
         </nav>
         <section class="head-data">
             <div class="head-para">
-          <h1>Unlock a new era of collaboration<br> efficiency with Delrxl
+          <h1>Unlock a new era of collaboration<br/> efficiency with Delrxl
           </h1>
           <p>Effortless precision and seamless interactions-DelrXL transforms the art of dealer and <br>
             customer management,unlocking a realm of perfection for your business.
           </p>
+
+
         </div>
         <div class="head-buttons">
             <button class="first-button">Request demo</button>
@@ -223,48 +224,56 @@
             
         </div>
     </div>
+    <footer class="footer">
+        <div class="details">
+           <div class="Contact">
+            <h4>contact</h4>
+            <p>info@ohoh.in</p>
+            <p>sales.ohoh.in/</p>
+            <p>Tel.(+91)9360524391</p>
+           </div>
+           <div class="company">
+            <h4>company</h4>
+            <p>About us</p>
+            <p>Blog</p>
+            <p>carrer</p>
+           </div>
+           <div class="customer help">
+            <h4>Customer help</h4>
+            <p>privacy policy</p>
+            <p>Do Not Sell My Information</p>
+           </div>
+        </div>
     
- 
+        <div class="final">
+            <div class="final-ohoh">
+            <img class="logo" src="ohoh.jpeg" alt="Logo">
+            </div>
+            <div class="social-media">
+                <img src="facebook.png" alt="">
+                <img src="x.jpeg" alt="">
+                <img src="instagram.png" alt="">
+                <img src="linkedin.jpeg" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="large-line"></div>
+        <div class="copyrights">
+            <p>ohoh.&copy; 2024.All rights reserved</p>
+        </div>
+    </footer>
 
+    <script>
+        const menu = document.querySelector('.menu');
+        const menuList = document.querySelector('.nav-block-middle');
+    
+        menu.addEventListener('click', () => {
+            menuList.classList.toggle('showmenu');
+        });
+    </script>
 </body>
 
-<footer class="footer">
-    <div class="details">
-       <div class="contact">
-        <h4>contact</h4>
-        <p>info@ohoh.in</p>
-        <p>sales.ohoh.in/</p>
-        <p>Tel.(+91)9360524391</p>
-       </div>
-       <div class="company">
-        <h4>company</h4>
-        <p>About us</p>
-        <p>Blog</p>
-        <p>carrer</p>
-       </div>
-       <div class="customer help">
-        <h4>Customer help</h4>
-        <p>privacy policy</p>
-        <p>Do Not Sell My Information</p>
-       </div>
-    </div>
 
-    <div class="final">
-        <div class="final-ohoh">
-        <img class="logo" src="ohoh.jpeg" alt="Logo">
-        </div>
-        <div class="social-media">
-            <img src="facebook.png" alt="">
-            <img src="x.jpeg" alt="">
-            <img src="instagram.png" alt="">
-            <img src="linkedin.jpeg" alt="">
-        </div>
-        
-    </div>
 
-    <div class="large-line"></div>
-    <div class="copyrights">
-        <p>ohoh.&copy; 2024.All rights reserved</p>
-    </div>
-</footer>
 </html>
