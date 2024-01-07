@@ -9,6 +9,7 @@
   body {
     background: white;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
   }
   
   nav{
@@ -356,7 +357,7 @@ width: 60px;
 }
 
 .our-blogs-content .row .col  img{
-    height:200px;
+    height:250px;
     width:300px;
     align-items: center;
     justify-content: space-between;
